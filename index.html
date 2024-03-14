@@ -39,7 +39,7 @@
                     </div>
                     <div>
                         <p>
-                            <label class="label-font">Usia (Tahun)</label> <br/>
+                            <label class="label-font" id="">Usia (Tahun)</label> <br/>
                         </p>
                         <input type="number" class="form-item">
                     </div>
@@ -49,11 +49,10 @@
                         </p>
                         <input type="number" class="form-item" id="height"> <br>
                         <button type="button" id="calculate-button" onclick="calculateBMI()">Hitung BMI</button>
-                        <button type="button">Reset</button>
+                        <button type="button" onclick="resetUI()">Reset</button>
                     </div>
                 </section>
                 <section>
-                    
                        <h2>Keunggulan fitur</h2> 
                         <ol>
                             <li>Menghitung berat badan</li>
@@ -79,22 +78,14 @@
                 <section class="container-result">
                     <h4 id="category"></h4>
                     <div id="result"></div>
-                    <p> Anda Memiliki Berat Badan Berlebih</p>
                     <button type="button">Download Hasil BMI</button>
                 </section>
                 <section>
-                    <h4>Hasil BMI diantara 23 dan 25</h4>
-                    <p>
-                        Anda berada dalam kategori overweight atau berat badan berlebih. <br/>
-                        Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalor makanan 
-                        yang dikonsumsi dan berolahraga. <br>
-                        Jika BMI anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan 
-                        hingga batas normal.
-                    </p>
+                    <p id="isObesse"> </p>
                     <button type="button">Konsultasi Ahli Gizi Via Aplikasi</button>
                     <button type="button">Registrasi Online Ahli Gizi</button> <br/>
                 </section>
-                <section class="container-result">
+                <section class="container-result" id="additionalMessage" style="display: none;">
                         <h4> Beberapa Penyakit yang berasal dari kegemukan</h4>
                         <p> Diabetes</p>
                         <p> Hipertensi</p>
@@ -113,4 +104,40 @@
 </body>
 
 
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Sorot</title>
+<style>
+  /* CSS untuk menentukan warna tombol */
+  .tombol {
+    background-color: #4CAF50; /* Warna default tombol */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  /* CSS untuk menyorot tombol saat dihover */
+  .tombol:hover {
+    background-color: #45a049; /* Warna tombol saat dihover */
+  }
+</style>
+</head>
+<body>
+
+<!-- Tombol -->
+<button class="tombol">Tombol Sorot</button>
+
+</body>
 </html>

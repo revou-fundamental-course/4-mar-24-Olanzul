@@ -1,0 +1,70 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+}
+
+header>h1{
+    text-align: center;
+}
+
+.main-container{
+    display: flex;
+}
+
+
+.container-item  {
+    border: 1px solid;
+    width: 100%;
+    padding: 24px;
+}
+
+.container-item>h2{
+    text-align: center;
+
+}
+
+.container-result{
+    text-align: center;
+    background-color: aliceblue;
+    padding: 8px;
+}
+
+.container-form{
+    text-align: left;
+    background-color: aliceblue;
+    padding: 8px;
+}
+    
+.form-item{
+    height: 24px;
+    border: 0px; 
+    border-radius: 8px;
+    background-color: lightgray;
+    margin-bottom: 8px;
+}
+
+button{
+    border: 0px;
+    height: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: lightgreen;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+#calculate-button{
+    background-color: coral;
+    color: white;
+    
+}
+
+.label-font{
+    font-weight: bold;
+}
+
+@media only screen and (max-width:480px){
+    .main-container{
+        flex-direction: column;
+    }
+}
